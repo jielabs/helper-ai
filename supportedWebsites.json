@@ -1,0 +1,25 @@
+{
+  "urls": {
+    "linkedin.com": {
+      "action": "document.activeElement.innerText"
+    },
+    "twitter.com": {
+      "action": "document.activeElement.textContent"
+    },
+    "facebook.com": {
+      "action": "document.activeElement.textContent"
+    },
+    "instagram.com": {
+      "action": "document.activeElement.textContent"
+    },
+    "studio.youtube.com": {
+      "action": "document.activeElement.textContent"
+    },
+    "sheets.google.com": {
+      "action": "document.activeElement.textContent"
+    }
+  },
+  "default": {
+    "action": "document.activeElement.textContent"
+  }
+}

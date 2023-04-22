@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Helper AI",
+  "version": "1.0",
+  "description": "Use OpenAI's GPT-4 to generate text, translate languages, and write code on any website.",
+  "permissions": ["storage"],
+  "action": {
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "host_permissions": ["<all_urls>"]
+}
